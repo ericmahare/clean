@@ -1,9 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: aqua;
+:root {
+    --main-font-size: 18px;
+    --main-font-style: 'prompt';
+    --primary-color: '#CF881D';
 }
+
+body {
+    font-size: var(--main-font-size);
+    font-family: var(--main-font-style);
+}
+
+.inner-container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* top nav */
+
+.top-nav {
+    width: 100%;
+    background-color: #eee;
+    font-weight: 600;
+    padding-left: 0;
+    display: flex;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    list-style-type: none;
+    
+}
+
+.icon {
+    color: #CF881D;
+}
+/* end of top nav */
+
+/* Navbar */
+.nav {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5A5A5A;
+    text-transform: uppercase;
+    display: block;
+}
+
+.quote-btn-container {
+    justify-self: right;
+}
+
+.quote-btn {
+    padding: 16px 24px;
+    background-color: #CF881D;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+/* End of navbar */
+
+/* header section */
+.hero {
+    width: 100%;
+    height: calc(100vh - 180px);
+    background-image: url('./images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header {
+    width: 990px;
+}
+
+.hero-header h1 {
+    font-size: 68px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero-header h5 {
+    text-align: center;
+}
+
+.contact-btn {
+    display: block;
+    margin: 40px auto;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #CF881D;
+}
+/* end of header section */
+
+/*Why us*/
+.why-us {
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.why-us-text {
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+.why-us-text h3 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.why-us-text h6 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/*end of why us*/

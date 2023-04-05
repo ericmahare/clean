@@ -1,8 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>   
+    <%- include('./partials/head.ejs') %>   
 <body>
+    <%- include("./partials/topnav.ejs") %>
     <%- include("./partials/navbar.ejs") %>
-    <p>Home page</p>
+    <header>
+        <div class="hero">
+            <div class="hero-header">
+                <h5>COMMITED TO TOP QUALITY SERVICES</h5>
+                <h1>PROFESSIONAL RESIDENTIAL AND COMMERCIAL CLEANING SERVICES</h1>
+                <div>
+                    <button class="contact-btn">CONTACT US</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- why us -->
+    <section class="why-us inner-container">
+        <div class="why-us-image">
+            <img src="./images/clean_why.png" alt="why-us">
+        </div>
+        <div class="why-us-text">
+            <h3>WHO WE ARE</h3>
+            <p>At Luxe Cleaning Co. we pride ourselves in providing you with a high-quality clean & professional service.  Servicing all of SE MB, we offer Home, Business or Post -Construction Cleaning to give you a hand with your cleaning needs. Our friendly crew is ready to impress.</p>
+            <h6>WHY US</h6>
+            <div>
+                <ul>
+                    <li>Trained Staff</li>
+                    <li>100% Satisfaction Guarantee</li>
+                    <li>High Quality Cleaning</li>
+                    <li>We bring our own cleaning supplies</li>
+                    <li>Responsive to feedback</li>
+                    <li>Daily, Weekly, Biweekly, & monthly options</li>
+                </ul>
+            </div>
+            <button>LEARN MORE</button>
+        </div>
+    </section>
+    <!-- end -->
 </body>
 </html>
